@@ -78,6 +78,39 @@
           "sha256": "bb7160f70595442df5f1900fc455f53de329a48655328ddb60ea4b665f5f959b"
         }
       }
+    },
+    {
+      "id": "io.github.dovepants.qobuz-downloader",
+      "name": "Qobuz Purchase Downloader",
+      "version": "1.0.0",
+      "description": "Download purchased Qobuz albums and tracks in entitled formats to a selected folder. No streaming subscription required. Linux x86_64; glibc 2.38 or later.",
+      "author": "dovepants",
+      "category": "Downloads",
+      "repository": "https://github.com/dovepants/qobuz-downloader",
+      "package": "https://github.com/dovepants/qobuz-downloader/releases/download/v1.0.0/1.0.0-linux-x86_64.zip",
+      "sha256": "11a9d456795700b93771ebb7b53202a5f8559560827f3e9793927e44cdc10d35",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/dovepants/qobuz-downloader/releases/download/v1.0.0/1.0.0-linux-x86_64.zip",
+          "sha256": "11a9d456795700b93771ebb7b53202a5f8559560827f3e9793927e44cdc10d35"
+        }
+      },
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/dovepants/chilpa-3rd-party-plugins/dfc40a97586a2d39831795d660907e14857bb7c4/validation/qobuz-downloader-1.0.0-linux-x86_64.json",
+        "platforms": {
+          "linux-x86_64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/dovepants/chilpa-3rd-party-plugins/dfc40a97586a2d39831795d660907e14857bb7c4/validation/qobuz-downloader-1.0.0-linux-x86_64.json"
+          }
+        }
+      }
     }
   ]
 }
