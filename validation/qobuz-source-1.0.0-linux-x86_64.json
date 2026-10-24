@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.dovepants.qobuz",
+  "plugin_version": "1.0.0",
+  "author": "dovepants",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-10-23",
+    "scope": [
+      "manifest identity, process contract and requested permissions",
+      "automated tests without live service credentials",
+      "archive integrity, private-path exclusion and retained licence notices",
+      "account-free packaged process behaviour",
+      "loading of the exact published archive and settings RPC in an isolated native host"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/dovepants/qobuz-source",
+    "commit": "ee15e89bfdb51cce6a1dd03d8ed2e5bd3c7391ae",
+    "tree": "099447530ff39af7330c969d90bcad070605b593"
+  },
+  "package": {
+    "name": "1.0.0-linux-x86_64.zip",
+    "url": "https://github.com/dovepants/qobuz-source/releases/download/v1.0.0/1.0.0-linux-x86_64.zip",
+    "sha256": "6275c57886b812ae11b4b92f676e6955026e85daac870dd1562e42fe35fb3026",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 4736408,
+    "expanded_bytes": 11703926,
+    "files": 8,
+    "binary_sha256": "f33f9d2a05cf5d5e89cf6965881355941a4638e8339f4fbefbf44d5715e5c7ba"
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "host_revision": "a0fd34f4b31033ed55aa346b5ce9ed0d1f606d64",
+    "host_binary_sha256": "bb8c9c44eb3a220f41211f124aaf112cc46a94fe66c275a206d233f1adf910f8"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "www.qobuz.com",
+        "play.qobuz.com",
+        "streaming-qobuz-std.akamaized.net",
+        "static.qobuz.com",
+        "d12eggcejhfkay.cloudfront.net"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ],
+  "checks": {
+    "automated_tests": {
+      "passed": 153,
+      "failed": 0
+    },
+    "native_package_build": true,
+    "account_free_process_smoke": true,
+    "exact_package_isolated_host_loading": true,
+    "host_permission_approval_and_settings_rpc": true,
+    "published_archive_download_checksum": true,
+    "compiler_home_paths_excluded": true,
+    "private_account_files_excluded": true,
+    "third_party_licence_notices_retained": true,
+    "documentation_tests": {
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "not_tested": [
+    "live account authorisation and sign-in",
+    "live account or playlist mutations",
+    "provider audio delivery and physical audio output",
+    "macOS, Windows, other Linux architectures and older glibc systems"
+  ],
+  "existing_user_profile_modified": false,
+  "audio_played": false,
+  "build": {
+    "operating_system": "Gentoo Linux",
+    "architecture": "x86_64",
+    "minimum_required_glibc": "2.38"
+  }
+}
