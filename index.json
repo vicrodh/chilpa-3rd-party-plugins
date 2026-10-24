@@ -78,6 +78,39 @@
           "sha256": "bb7160f70595442df5f1900fc455f53de329a48655328ddb60ea4b665f5f959b"
         }
       }
+    },
+    {
+      "id": "io.github.dovepants.apple-music",
+      "name": "Apple Music",
+      "version": "1.0.0",
+      "description": "Apple Music catalogue, library, favourites, lyrics and playback through a local native runtime. Subscription required. Linux x86_64; glibc 2.42 and GLIBCXX_3.4.30 required. Apple libraries require an explicit verified download; AAC/Widevine-only tracks are unsupported.",
+      "author": "dovepants",
+      "category": "Streaming",
+      "repository": "https://github.com/dovepants/apple-music-source",
+      "package": "https://github.com/dovepants/apple-music-source/releases/download/v1.0.0/1.0.0-linux-x86_64.zip",
+      "sha256": "c357081cfbb2b9d9dbeee373f0a433559ca0868d8c4dc432681fbb96e49bdb21",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/dovepants/apple-music-source/releases/download/v1.0.0/1.0.0-linux-x86_64.zip",
+          "sha256": "c357081cfbb2b9d9dbeee373f0a433559ca0868d8c4dc432681fbb96e49bdb21"
+        }
+      },
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/dovepants/chilpa-3rd-party-plugins/43939b62a8e19e0452f57d3f730849e9b75cd9d6/validation/apple-music-source-1.0.0-linux-x86_64.json",
+        "platforms": {
+          "linux-x86_64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/dovepants/chilpa-3rd-party-plugins/43939b62a8e19e0452f57d3f730849e9b75cd9d6/validation/apple-music-source-1.0.0-linux-x86_64.json"
+          }
+        }
+      }
     }
   ]
 }
