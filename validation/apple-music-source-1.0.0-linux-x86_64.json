@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.dovepants.apple-music",
+  "plugin_version": "1.0.0",
+  "author": "dovepants",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-10-23",
+    "scope": [
+      "manifest identity, process contract and requested permissions",
+      "automated tests without live service credentials",
+      "archive integrity, private-path exclusion and retained licence notices",
+      "account-free packaged process behaviour",
+      "loading of the exact published archive and settings RPC in an isolated native host"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/dovepants/apple-music-source",
+    "commit": "b3bc3ebd3f39ff0a5256ccd6ee38bdf3f615fc59",
+    "tree": "97ce6e350c17cd25d91a92a4c65d4d493ecf814a"
+  },
+  "package": {
+    "name": "1.0.0-linux-x86_64.zip",
+    "url": "https://github.com/dovepants/apple-music-source/releases/download/v1.0.0/1.0.0-linux-x86_64.zip",
+    "sha256": "c357081cfbb2b9d9dbeee373f0a433559ca0868d8c4dc432681fbb96e49bdb21",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 16903689,
+    "expanded_bytes": 41404740,
+    "files": 127,
+    "binary_sha256": "7a91fa7e90857c299033419bc661b36e1811ddf88a4e668a8b1a50c115743774"
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "host_revision": "a0fd34f4b31033ed55aa346b5ce9ed0d1f606d64",
+    "host_binary_sha256": "bb8c9c44eb3a220f41211f124aaf112cc46a94fe66c275a206d233f1adf910f8",
+    "runtime_sdk_revision": "1f8f7ac3137f93a1eb5097ac10a675af48c0166f"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "music.apple.com",
+        "amp-api.music.apple.com",
+        "play.itunes.apple.com",
+        "sf-api-token-service.itunes.apple.com",
+        "itunes.apple.com",
+        "mzstatic.com",
+        "universal-activity-service.itunes.apple.com",
+        "raw.githubusercontent.com"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ],
+  "checks": {
+    "automated_tests": {
+      "passed": 103,
+      "failed": 0
+    },
+    "native_package_build": true,
+    "account_free_process_smoke": true,
+    "exact_package_isolated_host_loading": true,
+    "host_permission_approval_and_settings_rpc": true,
+    "published_archive_download_checksum": true,
+    "compiler_home_paths_excluded": true,
+    "private_account_files_excluded": true,
+    "third_party_licence_notices_retained": true,
+    "native_runtime_regression_fixtures": "passed",
+    "account_free_runtime_startup_and_shutdown": true,
+    "sandboxed_package_startup_and_shutdown": true
+  },
+  "not_tested": [
+    "live account authorisation and sign-in",
+    "live account or playlist mutations",
+    "provider audio delivery and physical audio output",
+    "macOS, Windows, other Linux architectures and older glibc systems"
+  ],
+  "existing_user_profile_modified": false,
+  "audio_played": false,
+  "build": {
+    "operating_system": "Gentoo Linux",
+    "architecture": "x86_64",
+    "minimum_required_glibc": "2.42",
+    "minimum_required_glibcxx": "3.4.30",
+    "apple_proprietary_libraries_bundled": false
+  }
+}

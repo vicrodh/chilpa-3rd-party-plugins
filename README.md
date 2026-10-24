@@ -69,6 +69,7 @@ https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/main/index.js
 | --- | --- | --- | --- | --- |
 | Tidal | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | Linux x86_64 | Chilpa 0.1.0-beta; a Tidal account with a subscription for full playback. |
 | Spotify | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | Linux x86_64 / macOS Apple Silicon | A host with native process support; Premium for playback; personal Client ID recommended. |
+| Apple Music | [dovepants](https://github.com/dovepants) | [apple-music-source](https://github.com/dovepants/apple-music-source) | Linux x86_64 | Native process support; glibc 2.42; GLIBCXX_3.4.30; subscription; explicit download of 22 verified Apple libraries. AAC/Widevine-only tracks are unsupported. |
 
 The Tidal plugin is independent of the service provider and retains its
 GPL-3.0-or-later license.
