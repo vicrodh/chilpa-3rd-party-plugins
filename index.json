@@ -78,6 +78,39 @@
           "sha256": "bb7160f70595442df5f1900fc455f53de329a48655328ddb60ea4b665f5f959b"
         }
       }
+    },
+    {
+      "id": "io.github.dovepants.qobuz",
+      "name": "Qobuz",
+      "version": "1.0.0",
+      "description": "Qobuz catalogue, library, playlists, lyrics and playback through browser authorisation. Subscription required. Linux x86_64; glibc 2.38 or later.",
+      "author": "dovepants",
+      "category": "Streaming",
+      "repository": "https://github.com/dovepants/qobuz-source",
+      "package": "https://github.com/dovepants/qobuz-source/releases/download/v1.0.0/1.0.0-linux-x86_64.zip",
+      "sha256": "6275c57886b812ae11b4b92f676e6955026e85daac870dd1562e42fe35fb3026",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/dovepants/qobuz-source/releases/download/v1.0.0/1.0.0-linux-x86_64.zip",
+          "sha256": "6275c57886b812ae11b4b92f676e6955026e85daac870dd1562e42fe35fb3026"
+        }
+      },
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/dovepants/chilpa-3rd-party-plugins/0607c4f078fc376fd915f79c2e84c18db4620151/validation/qobuz-source-1.0.0-linux-x86_64.json",
+        "platforms": {
+          "linux-x86_64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/dovepants/chilpa-3rd-party-plugins/0607c4f078fc376fd915f79c2e84c18db4620151/validation/qobuz-source-1.0.0-linux-x86_64.json"
+          }
+        }
+      }
     }
   ]
 }
