@@ -67,6 +67,7 @@ https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/main/index.js
 
 | Plugin | Author | Source and downloads | Platform | Requirements |
 | --- | --- | --- | --- | --- |
+| Apple Music | [ShinnyCharizard](https://github.com/ShinnyCharizard) | [apple-music-source](https://github.com/ShinnyCharizard/apple-music-source) | Linux x86_64 | Apple Music subscription; glibc 2.42 and GLIBCXX_3.4.30 or later; Apple libraries installed explicitly in settings. |
 | Tidal | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | Linux x86_64 | Chilpa 0.1.0-beta; a Tidal account with a subscription for full playback. |
 | Spotify | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | Linux x86_64 / macOS Apple Silicon | A host with native process support; Premium for playback; personal Client ID recommended. |
 

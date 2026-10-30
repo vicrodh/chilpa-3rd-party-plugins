@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.shinnycharizard.apple-music",
+  "plugin_version": "1.0.2",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-10-29",
+    "scope": [
+      "manifest and requested permissions",
+      "archive integrity and own-identity/compiler-path audit",
+      "103 adapter tests",
+      "native runtime TLS and API isolation",
+      "sandboxed packaged setup and seeded runtime lifecycle",
+      "exact ZIP local installation, explicit approval, settings and sidebar registration"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/apple-music-source",
+    "commit": "2492b73e9280f69ae43a28cd045a146eafcf0c47",
+    "tree": "b7564c18a052c4751b6795dbd5f56817c2b9750f"
+  },
+  "package": {
+    "name": "apple-music-source-1.0.2-linux-x86_64.zip",
+    "url": "https://github.com/ShinnyCharizard/apple-music-source/releases/download/v1.0.2/apple-music-source-1.0.2-linux-x86_64.zip",
+    "sha256": "d53e6c2c7b4938430fae336f5146b6137be49cad720f3e38166fa5f855ac5ab4",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 16910827,
+    "expanded_bytes": 41422075,
+    "files": 127,
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "host_revision": "77a2b3f99b1f87aa14f397ddb2d3abe4253b2686",
+    "upstream_sdk_revision": "1f8f7ac3137f93a1eb5097ac10a675af48c0166f"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "music.apple.com",
+        "amp-api.music.apple.com",
+        "play.itunes.apple.com",
+        "sf-api-token-service.itunes.apple.com",
+        "itunes.apple.com",
+        "mzstatic.com",
+        "universal-activity-service.itunes.apple.com",
+        "raw.githubusercontent.com"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ],
+  "checks": {
+    "adapter_tests": {
+      "passed": 103,
+      "failed": 0
+    },
+    "native_runtime_smoke": true,
+    "package_setup_smoke": true,
+    "package_runtime_smoke": true,
+    "exact_zip_host_loading": true,
+    "explicit_component_installation": true,
+    "sign_in_gated_on_components": true,
+    "source_and_package_upstream_notices_retained": true
+  },
+  "known_limitations": [
+    "Search may hit rate limits and require a wait between queries.",
+    "AAC/Widevine-only tracks are unsupported."
+  ],
+  "not_tested": [
+    "live sign-in and two-factor authentication",
+    "live account mutations",
+    "live service playback",
+    "physical audio output"
+  ],
+  "existing_user_profile_modified": false,
+  "audio_played": false,
+  "build": {
+    "minimum_required_glibc": "2.42",
+    "minimum_required_glibcxx": "3.4.30",
+    "apple_vendor_libraries_bundled": false,
+    "vendor_components_explicitly_downloaded": 22
+  }
+}
