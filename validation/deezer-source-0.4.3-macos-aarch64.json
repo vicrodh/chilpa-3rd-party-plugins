@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.shinnycharizard.deezer",
+  "plugin_version": "0.4.3",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-10-29",
+    "scope": [
+      "manifest and requested permissions",
+      "original MIT notices and upstream credit",
+      "archive format and architecture",
+      "compiler path remapping and previous identity exclusion",
+      "37 fixture tests on this platform",
+      "exact ZIP native host installation and approval",
+      "wizard validation, sidebar Home/library, sorting, theme icons and six See all destinations"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/deezer-source",
+    "commit": "54071445933bf49a811781045ff1b748217e9a12",
+    "tree": "06555fc19ced713e319398efa227e8818672c7f7"
+  },
+  "upstream": {
+    "repository": "https://github.com/anon7627/deezsrc",
+    "author": "anon7627",
+    "licence": "MIT",
+    "notices_retained": true
+  },
+  "package": {
+    "name": "deezer-source-0.4.3-macos-aarch64.zip",
+    "url": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.3/deezer-source-0.4.3-macos-aarch64.zip",
+    "sha256": "171c96ac6bbb797bbddd2a30c98e02cdc4cfbca4cb823d9fe8993d6d73c3f538",
+    "platform": "macos-aarch64",
+    "compressed_bytes": 1905566,
+    "expanded_bytes": 3811084,
+    "binary_sha256": "733f72dd1c767d3c156c9e57abf9076fd8e2d9dd3c87c8b516d055f068ad4136",
+    "files": 5,
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "host_binary_sha256": "e5119c0d4822095a9b4a142458aceccd8221017531ebe0c1e8b1d977095bf21a"
+  },
+  "permissions": [
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    },
+    {
+      "type": "network",
+      "domains": [
+        "www.deezer.com",
+        "api.deezer.com",
+        "media.deezer.com",
+        "dzcdn.net"
+      ]
+    }
+  ],
+  "checks": {
+    "rust_tests": {
+      "passed": 37,
+      "failed": 0,
+      "ignored": 0
+    },
+    "exact_zip_host_loading": true,
+    "host_seconds": 23.34,
+    "control_activation": "rendered control signal",
+    "home_source_see_all": 3,
+    "global_home_see_all": 3,
+    "preview_first_item_preserved": true,
+    "public_catalogue": true,
+    "real_account": false,
+    "live_audio": false
+  },
+  "not_tested": [
+    "live account authentication",
+    "live service audio and physical output",
+    "30-minute retention and idle CPU/GPU"
+  ],
+  "existing_user_profile_modified": false,
+  "audio_played": false,
+  "build": {
+    "architecture": "arm64",
+    "signature": "ad hoc; codesign --verify --strict passed",
+    "notarised": false,
+    "host_note": "Installed host was older; global Home was tested with default integration enabled. No newer host fixes are claimed."
+  }
+}

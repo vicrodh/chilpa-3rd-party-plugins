@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.shinnycharizard.deezer",
+  "plugin_version": "0.4.3",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-10-29",
+    "scope": [
+      "manifest and requested permissions",
+      "original MIT notices and upstream credit",
+      "archive format and architecture",
+      "compiler path remapping and previous identity exclusion",
+      "37 fixture tests on this platform",
+      "exact ZIP native host installation and approval",
+      "wizard validation, sidebar Home/library, sorting, theme icons and six See all destinations"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/deezer-source",
+    "commit": "54071445933bf49a811781045ff1b748217e9a12",
+    "tree": "06555fc19ced713e319398efa227e8818672c7f7"
+  },
+  "upstream": {
+    "repository": "https://github.com/anon7627/deezsrc",
+    "author": "anon7627",
+    "licence": "MIT",
+    "notices_retained": true
+  },
+  "package": {
+    "name": "deezer-source-0.4.3-linux-x86_64.zip",
+    "url": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.3/deezer-source-0.4.3-linux-x86_64.zip",
+    "sha256": "37ae9ddbf5c831f6c2d5fa2c14a970b17bf920d9d1c15726952994e7466c6314",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 2084652,
+    "expanded_bytes": 4406084,
+    "binary_sha256": "68e6b4fbacc2585e89d31e7306d5516361c376d8144228b78085087d3879b986",
+    "files": 5,
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "host_binary_sha256": "de80604d7e8aed765b55c4af31369a2c2f4b6160a09f6d4eef0e970153444123",
+    "host_revision": "77a2b3f99b1f87aa14f397ddb2d3abe4253b2686"
+  },
+  "permissions": [
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    },
+    {
+      "type": "network",
+      "domains": [
+        "www.deezer.com",
+        "api.deezer.com",
+        "media.deezer.com",
+        "dzcdn.net"
+      ]
+    }
+  ],
+  "checks": {
+    "rust_tests": {
+      "passed": 37,
+      "failed": 0,
+      "ignored": 0
+    },
+    "exact_zip_host_loading": true,
+    "host_seconds": 27.255,
+    "control_activation": "QtTest mouse and keyboard",
+    "home_source_see_all": 3,
+    "global_home_see_all": 3,
+    "preview_first_item_preserved": true,
+    "public_catalogue": true,
+    "real_account": false,
+    "live_audio": false
+  },
+  "not_tested": [
+    "live account authentication",
+    "live service audio and physical output",
+    "30-minute retention and idle CPU/GPU"
+  ],
+  "existing_user_profile_modified": false,
+  "audio_played": false
+}

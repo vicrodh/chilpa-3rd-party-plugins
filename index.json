@@ -105,6 +105,47 @@
           "sha256": "bb7160f70595442df5f1900fc455f53de329a48655328ddb60ea4b665f5f959b"
         }
       }
+    },
+    {
+      "id": "io.github.shinnycharizard.deezer",
+      "name": "Deezer",
+      "version": "0.4.3",
+      "description": "Deezer discovery, saved library, search, playlists and authenticated playback. Built on deezsrc by anon7627. Linux x86_64 and macOS Apple Silicon; audio quality depends on your account and subscription.",
+      "author": "ShinnyCharizard",
+      "category": "Streaming",
+      "repository": "https://github.com/ShinnyCharizard/deezer-source",
+      "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.3/deezer-source-0.4.3-linux-x86_64.zip",
+      "sha256": "37ae9ddbf5c831f6c2d5fa2c14a970b17bf920d9d1c15726952994e7466c6314",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.3/deezer-source-0.4.3-linux-x86_64.zip",
+          "sha256": "37ae9ddbf5c831f6c2d5fa2c14a970b17bf920d9d1c15726952994e7466c6314"
+        },
+        "macos-aarch64": {
+          "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.3/deezer-source-0.4.3-macos-aarch64.zip",
+          "sha256": "171c96ac6bbb797bbddd2a30c98e02cdc4cfbca4cb823d9fe8993d6d73c3f538"
+        }
+      },
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/eea76d1691385a0581df0a2e3384b8413716c356/validation/deezer-source-0.4.3-linux-x86_64.json",
+        "platforms": {
+          "linux-x86_64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/eea76d1691385a0581df0a2e3384b8413716c356/validation/deezer-source-0.4.3-linux-x86_64.json"
+          },
+          "macos-aarch64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/eea76d1691385a0581df0a2e3384b8413716c356/validation/deezer-source-0.4.3-macos-aarch64.json"
+          }
+        }
+      }
     }
   ]
 }
