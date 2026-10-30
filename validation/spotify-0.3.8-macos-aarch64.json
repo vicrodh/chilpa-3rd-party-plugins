@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "plugin_id": "app.chilpa.spotify",
+  "plugin_version": "0.3.8",
+  "author": "vicrodh",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-10-30",
+    "scope": [
+      "manifest and requested permissions",
+      "source and dependency provenance",
+      "archive integrity and compiler path remapping",
+      "executable process protocol",
+      "exact package loading in an isolated native host"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-spotify",
+    "commit": "951dbc297725e93ef717a3a2992b776ef715a43f",
+    "tree": "c5e18521bc5b66218acce695396861e625d4cfd6"
+  },
+  "package": {
+    "name": "app.chilpa.spotify-0.3.8-macos-aarch64.zip",
+    "url": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.8/app.chilpa.spotify-0.3.8-macos-aarch64.zip",
+    "sha256": "cc8ab03b2b3eb356551f1273d53623e9e40aae65579ded778d3573a1e75196b7",
+    "platform": "macos-aarch64",
+    "compressed_bytes": 3685324,
+    "expanded_bytes": 11094530,
+    "files": 10,
+    "binary_sha256": "1904f0852f70f18917bb1c48de7628a419f18d4999cecb5e10ea1b62fc536857"
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "sdk_revision": "edee9aeb704e44dbeb883036ef6dcd871e5df8f4",
+    "host_revision": "4eea66791c29b0b3a3af4bde1f70bc80419dd1b9"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "accounts.spotify.com",
+        "api.spotify.com",
+        "api-partner.spotify.com",
+        "apresolve.spotify.com",
+        "clienttoken.spotify.com",
+        "spclient.wg.spotify.com",
+        "audio-fa.scdn.co",
+        "i.scdn.co",
+        "mosaic.scdn.co",
+        "image-cdn-ak.spotifycdn.com",
+        "image-cdn-fa.spotifycdn.com"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ],
+  "checks": {
+    "rust_tests": {
+      "passed": 111,
+      "failed": 0,
+      "ignored": 1,
+      "date": "2026-10-30",
+      "scope": "release profile on the release source with the locked dependency graph; the ignored test needs a live account"
+    },
+    "executable_protocol_tests": {
+      "passed": 10,
+      "failed": 0,
+      "date": "2026-10-30"
+    },
+    "dependency_versions_preserved": true,
+    "vendor_files_verified": 666,
+    "source_tree_matches_release": true,
+    "account_files_excluded": true,
+    "compiler_home_paths_excluded": true,
+    "exact_package_host_loading": true,
+    "system_libraries_only": true
+  },
+  "not_tested": [
+    "live account sign-in, browsing and playback",
+    "live playlist mutations",
+    "lossless delivery",
+    "audible macOS playback",
+    "settings form through the QML smoke hook on macOS"
+  ],
+  "existing_user_profile_modified": false,
+  "audio_played": false,
+  "build": {
+    "architecture": "Apple Silicon",
+    "system": "macOS 26.6.2",
+    "host_requirement": "native process hosting enabled"
+  }
+}
