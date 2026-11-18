@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.shinnycharizard.deezer",
+  "plugin_version": "0.4.9",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-11-18",
+    "hosts": [
+      {
+        "version": "0.1.2",
+        "backend": "Flatpak",
+        "revision": "529055cbc93d8e9d88e0b4f5080f256c378e8fc9262dbdaa05c8e1bb2b32df6d"
+      },
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "native",
+        "revision": "377179849074da9d621c894fe205988d0bb9c85a"
+      }
+    ],
+    "scope": [
+      "exact ZIP installation and permission approval",
+      "process startup, disable and re-enable, settings form",
+      "published asset matches the tested ZIP"
+    ],
+    "untested": [
+      "live account authorisation and playback"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/deezer-source",
+    "commit": "eda0e2b99f0a24b02b1f66c2ec4e7fd6d157db24"
+  },
+  "package": {
+    "name": "deezer-source-0.4.9-linux-x86_64.zip",
+    "url": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.9/deezer-source-0.4.9-linux-x86_64.zip",
+    "sha256": "a564adcd805680a36dfbbc5d808e4ae76bf6894ef9d5a356ec7d865b3c3d5adb",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 2173510,
+    "expanded_bytes": 4602746,
+    "files": 5,
+    "binary_sha256": "3890d47499a3124fffb9019efa257333c6e2a29c899c117e36d1015b71a8c5fb",
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process"
+  },
+  "permissions": [
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    },
+    {
+      "type": "network",
+      "domains": [
+        "www.deezer.com",
+        "auth.deezer.com",
+        "pipe.deezer.com",
+        "api.deezer.com",
+        "media.deezer.com",
+        "dzcdn.net"
+      ]
+    }
+  ]
+}
