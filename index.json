@@ -29,6 +29,33 @@
       }
     },
     {
+      "id": "io.github.dovepants.qobuz",
+      "name": "Qobuz",
+      "version": "1.2.4",
+      "description": "Qobuz catalogue, saved library, playlists, lyrics and playback. Subscription required.",
+      "author": "ShinnyCharizard",
+      "category": "Streaming",
+      "repository": "https://github.com/ShinnyCharizard/pg-qbz",
+      "package": "https://github.com/ShinnyCharizard/pg-qbz/releases/download/v1.2.4/pg-qbz-1.2.4-linux-x86_64.zip",
+      "sha256": "f295fea36d6a82ed3cf64f2097cb0d31933ff0faf2b40546b2c60bf2c2e71828",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/ShinnyCharizard/pg-qbz/releases/download/v1.2.4/pg-qbz-1.2.4-linux-x86_64.zip",
+          "sha256": "f295fea36d6a82ed3cf64f2097cb0d31933ff0faf2b40546b2c60bf2c2e71828"
+        }
+      },
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/74d4037203e2bc81e8eaf13e49d92c0d625754f0/validation/pg-qbz-1.2.4-linux-x86_64.json"
+      }
+    },
+    {
       "id": "app.chilpa.tidal",
       "name": "Tidal",
       "version": "0.2.0",

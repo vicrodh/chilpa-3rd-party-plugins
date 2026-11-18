@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.dovepants.qobuz",
+  "plugin_version": "1.2.4",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-11-18",
+    "scope": [
+      "archive integrity and licence notices",
+      "exact ZIP installation and permission approval",
+      "process startup, disable and re-enable, settings form",
+      "published asset matches the tested ZIP"
+    ],
+    "hosts": [
+      {
+        "version": "0.1.2",
+        "backend": "flatpak",
+        "revision": "529055cbc93d8e9d88e0b4f5080f256c378e8fc9262dbdaa05c8e1bb2b32df6d"
+      },
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "native",
+        "revision": "377179849074da9d621c894fe205988d0bb9c85a"
+      }
+    ],
+    "untested": [
+      "live authorisation, catalogue browsing and playback",
+      "macOS"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/pg-qbz",
+    "commit": "3e6a1e9996a46eff179cb840867a8269a4dbcdf1"
+  },
+  "package": {
+    "name": "pg-qbz-1.2.4-linux-x86_64.zip",
+    "url": "https://github.com/ShinnyCharizard/pg-qbz/releases/download/v1.2.4/pg-qbz-1.2.4-linux-x86_64.zip",
+    "sha256": "f295fea36d6a82ed3cf64f2097cb0d31933ff0faf2b40546b2c60bf2c2e71828",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 6407728,
+    "expanded_bytes": 15394944,
+    "files": 9,
+    "binary_sha256": "e08073b10a4a337a8b6cd1cdca99f81883f76a356e04982c21b23c376826d0bf",
+    "download_verified": true,
+    "glibc_min": "2.38"
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "www.qobuz.com",
+        "qobuz-qobuz-prod.web.arc-cdn.net",
+        "play.qobuz.com",
+        "streaming-qobuz-std.akamaized.net",
+        "static.qobuz.com",
+        "d12eggcejhfkay.cloudfront.net"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ]
+}
