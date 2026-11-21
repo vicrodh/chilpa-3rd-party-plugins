@@ -31,13 +31,13 @@
     {
       "id": "app.chilpa.tidal",
       "name": "Tidal",
-      "version": "0.2.0",
-      "description": "Third-party Tidal library, discovery, playlists and playback. Requires a Tidal subscription. Linux x86_64 and macOS Apple Silicon.",
+      "version": "0.2.7",
+      "description": "Third-party Tidal library, discovery, genre shelves, mixes, playlists and playback. Requires Chilpa 0.1.3 and a Tidal subscription. Linux x86_64 and macOS Apple Silicon.",
       "author": "vicrodh",
       "category": "Streaming",
       "repository": "https://github.com/vicrodh/chilpa-pg-tidal",
-      "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.2.0/chilpa-pg-tidal-0.2.0-linux-x86_64.zip",
-      "sha256": "f7ade02aa78ad5be78ee0945bce590ca02b6c44410c2769b1366460724ca136f",
+      "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.2.7/0.2.7-x86_64-unknown-linux-gnu.zip",
+      "sha256": "dec4a46b4de04a4c51ea63999e89d508d34d217d5ef8a151a65af8a081dd64e6",
       "api": {
         "min": 1,
         "max": 1
@@ -45,36 +45,40 @@
       "classification": "third_party",
       "validation": {
         "project": "Chilpa",
-        "status": "passed",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/fbfc605cf667f4b5e4effdc45c2709560d990ff1/validation/tidal-0.2.0.json",
+        "status": "partial",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/tidal-0.2.7-linux-x86_64.json",
         "platforms": {
+          "linux-x86_64": {
+            "status": "partial",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/tidal-0.2.7-linux-x86_64.json"
+          },
           "macos-aarch64": {
             "status": "partial",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/fbfc605cf667f4b5e4effdc45c2709560d990ff1/validation/tidal-0.2.0-macos-aarch64.json"
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/tidal-0.2.7-macos-aarch64.json"
           }
         }
       },
       "packages": {
         "linux-x86_64": {
-          "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.2.0/chilpa-pg-tidal-0.2.0-linux-x86_64.zip",
-          "sha256": "f7ade02aa78ad5be78ee0945bce590ca02b6c44410c2769b1366460724ca136f"
+          "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.2.7/0.2.7-x86_64-unknown-linux-gnu.zip",
+          "sha256": "dec4a46b4de04a4c51ea63999e89d508d34d217d5ef8a151a65af8a081dd64e6"
         },
         "macos-aarch64": {
-          "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.2.0/chilpa-pg-tidal-0.2.0-macos-aarch64.zip",
-          "sha256": "405e66d70f8f570704b2d848b895f9b6869c61aad80ee70efe488b3ecd0c0235"
+          "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.2.7/0.2.7-aarch64-apple-darwin.zip",
+          "sha256": "5efae39eafe0bbad662112389087fb1bbea8b291468929322930eeb6c065ffe3"
         }
       }
     },
     {
       "id": "app.chilpa.spotify",
       "name": "Spotify",
-      "version": "0.3.8",
-      "description": "Third-party Spotify search, library, discovery, Radio, playlists, lyrics and playback. Premium required for audio; personal Client ID recommended. Inspired by Spotifast by Carmine Paolino.",
+      "version": "0.3.11",
+      "description": "Third-party Spotify search, library, genre discovery, Radio, playlists, lyrics and playback. Requires Chilpa 0.1.3; Premium for audio; personal Client ID recommended. Inspired by Spotifast by Carmine Paolino.",
       "author": "vicrodh",
       "category": "Streaming",
       "repository": "https://github.com/vicrodh/chilpa-pg-spotify",
-      "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.8/app.chilpa.spotify-0.3.8-linux-x86_64.zip",
-      "sha256": "bd5a06533b9e17c96222487705670c2ced50dcc149866892dffdabfe6fb5f4bc",
+      "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.11/app.chilpa.spotify-0.3.11-linux-x86_64.zip",
+      "sha256": "0552d5bcf09f69950525186c01af1a8a5d78004129ac3ece1ce7fc22242998e7",
       "api": {
         "min": 1,
         "max": 1
@@ -82,27 +86,27 @@
       "classification": "third_party",
       "validation": {
         "project": "Chilpa",
-        "status": "passed",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/aec7e7bf275f41aa1b7ca470e5d48138149b2458/validation/spotify-0.3.8-linux-x86_64.json",
+        "status": "partial",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/spotify-0.3.11-linux-x86_64.json",
         "platforms": {
           "linux-x86_64": {
-            "status": "passed",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/aec7e7bf275f41aa1b7ca470e5d48138149b2458/validation/spotify-0.3.8-linux-x86_64.json"
+            "status": "partial",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/spotify-0.3.11-linux-x86_64.json"
           },
           "macos-aarch64": {
-            "status": "passed",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/aec7e7bf275f41aa1b7ca470e5d48138149b2458/validation/spotify-0.3.8-macos-aarch64.json"
+            "status": "partial",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/spotify-0.3.11-macos-aarch64.json"
           }
         }
       },
       "packages": {
         "linux-x86_64": {
-          "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.8/app.chilpa.spotify-0.3.8-linux-x86_64.zip",
-          "sha256": "bd5a06533b9e17c96222487705670c2ced50dcc149866892dffdabfe6fb5f4bc"
+          "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.11/app.chilpa.spotify-0.3.11-linux-x86_64.zip",
+          "sha256": "0552d5bcf09f69950525186c01af1a8a5d78004129ac3ece1ce7fc22242998e7"
         },
         "macos-aarch64": {
-          "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.8/app.chilpa.spotify-0.3.8-macos-aarch64.zip",
-          "sha256": "cc8ab03b2b3eb356551f1273d53623e9e40aae65579ded778d3573a1e75196b7"
+          "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.11/app.chilpa.spotify-0.3.11-macos-aarch64.zip",
+          "sha256": "acf2bcf2415dd5ad6c0e92f63ebc7703aa09fbd2e319b0bd8f73a9855449fec3"
         }
       }
     },
