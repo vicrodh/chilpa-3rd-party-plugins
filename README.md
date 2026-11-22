@@ -68,8 +68,8 @@ https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/main/index.js
 | Plugin | Author | Source and downloads | Platform | Requirements |
 | --- | --- | --- | --- | --- |
 | Apple Music | [ShinnyCharizard](https://github.com/ShinnyCharizard) | [apple-music-source](https://github.com/ShinnyCharizard/apple-music-source) | Linux x86_64 | Apple Music subscription; glibc 2.42 and GLIBCXX_3.4.30 or later; Apple libraries installed explicitly in settings. |
-| Tidal | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | Linux x86_64 / macOS Apple Silicon | Chilpa 0.1.3; a Tidal account with a subscription for full playback. |
-| Spotify | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | Linux x86_64 / macOS Apple Silicon | Chilpa 0.1.3; Premium for playback; personal Client ID recommended. |
+| Tidal | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | Linux x86_64 | Chilpa 0.1.0-beta; a Tidal account with a subscription for full playback. |
+| Spotify | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | Linux x86_64 / macOS Apple Silicon | A host with native process support; Premium for playback; personal Client ID recommended. |
 | Deezer | [ShinnyCharizard](https://github.com/ShinnyCharizard) | [deezer-source](https://github.com/ShinnyCharizard/deezer-source) | Linux x86_64 / macOS Apple Silicon | Your own Deezer session; subscription and track availability determine audio quality. |
 
 The Tidal plugin is independent of the service provider and retains its
@@ -103,3 +103,8 @@ and matching package checksums to install and run.
 The public [SDK and authoring documentation](https://github.com/vicrodh/chilpa-plugins-sdk)
 defines the plugin contract. A detailed independent-repository guide is not
 yet available.
+
+Tidal 0.2.7 and Spotify 0.3.11 target Chilpa 0.1.3 and provide packages for
+Linux x86_64 and macOS Apple Silicon. Their new genre integration needs the
+0.1.3 host contracts. See each version’s catalogue validation report for the
+exact package checks and remaining release requirements.
