@@ -7,16 +7,29 @@
   "validation": {
     "project": "Chilpa",
     "status": "partial",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "scope": [
       "CI tests and production packaging",
       "archive CRC and SHA-256",
-      "manifest identity and API version"
+      "manifest identity and API version",
+      "exact CI archive installation, permission approval, disable and re-enable",
+      "draft release asset SHA-256 matches the tested CI archive"
     ],
     "pending": [
       "Chilpa 0.1.3 release with the required host contracts",
-      "exact CI archive installation in the corresponding native and Flatpak hosts",
       "release publication and public URL verification"
+    ],
+    "hosts": [
+      {
+        "version": "0.1.2",
+        "backend": "Flatpak",
+        "revision": "529055cbc93d8e9d88e0b4f5080f256c378e8fc9262dbdaa05c8e1bb2b32df6d"
+      },
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "native",
+        "revision": "d26d673f7f8c448a96cf1c9823cd95c4a311d4cf"
+      }
     ]
   },
   "source": {
@@ -69,7 +82,27 @@
     "status": "passed",
     "run": "https://github.com/vicrodh/chilpa-pg-spotify/actions/runs/44845821602"
   },
-  "exact_package_host_integration": "pending",
+  "exact_package_host_integration": "passed",
   "live_account_playback": "not tested",
-  "physical_audio": "not tested"
+  "physical_audio": "not tested",
+  "host_checks": [
+    {
+      "backend": "native",
+      "id": "app.chilpa.spotify",
+      "version": "0.3.11",
+      "sha256": "0552d5bcf09f69950525186c01af1a8a5d78004129ac3ece1ce7fc22242998e7",
+      "passed": true,
+      "isolated_install_verified": true,
+      "exit_code": 0
+    },
+    {
+      "backend": "flatpak",
+      "id": "app.chilpa.spotify",
+      "version": "0.3.11",
+      "sha256": "0552d5bcf09f69950525186c01af1a8a5d78004129ac3ece1ce7fc22242998e7",
+      "passed": true,
+      "isolated_install_verified": true,
+      "exit_code": 0
+    }
+  ]
 }

@@ -7,16 +7,24 @@
   "validation": {
     "project": "Chilpa",
     "status": "partial",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "scope": [
       "CI tests and production packaging",
       "archive CRC and SHA-256",
-      "manifest identity and API version"
+      "manifest identity and API version",
+      "exact CI archive installation, permission approval, disable and re-enable",
+      "draft release asset SHA-256 matches the tested CI archive"
     ],
     "pending": [
       "Chilpa 0.1.3 release with the required host contracts",
-      "exact CI archive installation in the corresponding native and Flatpak hosts",
       "release publication and public URL verification"
+    ],
+    "hosts": [
+      {
+        "version": "0.1.2 (application metadata)",
+        "backend": "native macOS",
+        "binary_sha256": "ae71420e71cad405b6ed0771df9811f0dbfc12dce6870e90231b66e5634786fe"
+      }
     ]
   },
   "source": {
@@ -69,7 +77,19 @@
     "status": "passed",
     "run": "https://github.com/vicrodh/chilpa-pg-tidal/actions/runs/44845819791"
   },
-  "exact_package_host_integration": "pending",
+  "exact_package_host_integration": "passed",
   "live_account_playback": "not tested",
-  "physical_audio": "not tested"
+  "physical_audio": "not tested",
+  "host_checks": [
+    {
+      "backend": "native",
+      "id": "app.chilpa.tidal",
+      "version": "0.2.7",
+      "sha256": "5efae39eafe0bbad662112389087fb1bbea8b291468929322930eeb6c065ffe3",
+      "passed": true,
+      "isolated_install_verified": true,
+      "export_checked": false,
+      "exit_code": 0
+    }
+  ]
 }
