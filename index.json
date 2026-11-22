@@ -46,15 +46,15 @@
       "validation": {
         "project": "Chilpa",
         "status": "partial",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/tidal-0.2.7-linux-x86_64.json",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/944600c43fe486d1e56bbbb3384699f993862c9a/validation/tidal-0.2.7-linux-x86_64.json",
         "platforms": {
           "linux-x86_64": {
             "status": "partial",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/tidal-0.2.7-linux-x86_64.json"
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/944600c43fe486d1e56bbbb3384699f993862c9a/validation/tidal-0.2.7-linux-x86_64.json"
           },
           "macos-aarch64": {
             "status": "partial",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/tidal-0.2.7-macos-aarch64.json"
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/944600c43fe486d1e56bbbb3384699f993862c9a/validation/tidal-0.2.7-macos-aarch64.json"
           }
         }
       },
@@ -87,15 +87,15 @@
       "validation": {
         "project": "Chilpa",
         "status": "partial",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/spotify-0.3.11-linux-x86_64.json",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/944600c43fe486d1e56bbbb3384699f993862c9a/validation/spotify-0.3.11-linux-x86_64.json",
         "platforms": {
           "linux-x86_64": {
             "status": "partial",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/spotify-0.3.11-linux-x86_64.json"
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/944600c43fe486d1e56bbbb3384699f993862c9a/validation/spotify-0.3.11-linux-x86_64.json"
           },
           "macos-aarch64": {
             "status": "partial",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/a2acbe874edae906c58ec0e808e17f3c3aad7754/validation/spotify-0.3.11-macos-aarch64.json"
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/944600c43fe486d1e56bbbb3384699f993862c9a/validation/spotify-0.3.11-macos-aarch64.json"
           }
         }
       },
