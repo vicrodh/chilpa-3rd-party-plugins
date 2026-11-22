@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.vicrodh.qbz",
+  "plugin_version": "0.1.4",
+  "author": "vicrodh",
+  "classification": "third_party",
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-qbz",
+    "commit": "a9090cb5a22d9b4a6a67b412e76dd00500743154",
+    "tag": "v0.1.4"
+  },
+  "package": {
+    "name": "pg-qbz-0.1.4-linux-x86_64.zip",
+    "url": "https://github.com/vicrodh/chilpa-pg-qbz/releases/download/v0.1.4/pg-qbz-0.1.4-linux-x86_64.zip",
+    "platform": "linux-x86_64",
+    "sha256": "bb910d437b0b4bc725b7c1eb02d69e51c7edb01d80559a0f6bbbdb6dc29531e6",
+    "binary_sha256": "fab106110dc9a6208d0d01ae56dbf94e8b9f3877416b90c26567dd41d228a91b",
+    "compressed_bytes": 21919100,
+    "expanded_bytes": 52704264,
+    "files": 129
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "sdk_revision": "fe89b2f21a636ca6fdf86ff5cd02e0c87fc41fe7",
+    "required_host_revision": "ce0a93fb78772f7b1895d9a2ad448929cc042b02",
+    "required_host_release": "0.1.3",
+    "required_host_features": [
+      "desktop_companion",
+      "settings_path_picker",
+      "settings_refresh"
+    ]
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "www.qobuz.com",
+        "qobuz-qobuz-prod.web.arc-cdn.net",
+        "play.qobuz.com",
+        "streaming-qobuz-std.akamaized.net",
+        "static.qobuz.com",
+        "d12eggcejhfkay.cloudfront.net",
+        "127.0.0.1"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    },
+    {
+      "type": "desktop_companion",
+      "entry": "browser/qbz-browser"
+    }
+  ],
+  "requirements": {
+    "external_programs": [
+      "Firefox",
+      "FFmpeg"
+    ],
+    "account": "Qobuz subscription with lossless streaming",
+    "minimum_platform": "glibc 2.42"
+  },
+  "validation": {
+    "project": "Chilpa",
+    "date": "2026-11-22",
+    "status": "passed",
+    "scope": [
+      "archive integrity, host size limits and portable package identity",
+      "no compiler home paths in packaged files",
+      "native host installation of the exact release ZIP",
+      "Firefox and decoder detection, disable and helper shutdown"
+    ]
+  },
+  "not_tested": [
+    "Physical DAC checks were not repeated for the manifest-only listing revision."
+  ],
+  "checks": {
+    "public_zip_host": {
+      "passed": true,
+      "exit": 0,
+      "seconds": 5.53,
+      "package_sha256": "bb910d437b0b4bc725b7c1eb02d69e51c7edb01d80559a0f6bbbdb6dc29531e6",
+      "binary_sha256": "3bd3e1a7424baca0a5db8384f3f8d3fdaf2451ebc379144cf9b2af094f9191dd",
+      "checks": [
+        "qml: SETUP PASS native wizard detected Firefox and decoder",
+        "qml: SETUP PASS disabled",
+        "qml: SETUP PASS About release codename"
+      ]
+    },
+    "python_tests": 39,
+    "rust_library_tests": {
+      "passed": 136,
+      "ignored": 2
+    },
+    "rust_process_tests": 3,
+    "native_and_flatpak_playback": "Controls, two complete 24-bit/192 kHz tracks, local gapless and identical PCM passed on the audio-tested archive.",
+    "audio_tested_archive_sha256": "80d256ea96bb32feaf6a52511c5852acb138790ec566fe7999c4f90669edd3ce",
+    "release_archive_revision": {
+      "original_tested_zip_sha256": "80d256ea96bb32feaf6a52511c5852acb138790ec566fe7999c4f90669edd3ce",
+      "revised_zip_sha256": "bb910d437b0b4bc725b7c1eb02d69e51c7edb01d80559a0f6bbbdb6dc29531e6",
+      "changed_entries": [
+        "manifest.json"
+      ],
+      "changed_manifest_fields": [
+        "description",
+        "name"
+      ],
+      "binaries_and_assets_byte_identical": true,
+      "validation": "All archive entry contents except manifest.json are byte-identical to the tested package. Prior audio and host test results retain the original tested ZIP hash; audio tests were not rerun for this listing-only revision."
+    },
+    "pcm_sha256": "af1761a632c11cbde3c2f0d089fe9e028f5a3809c29b10a1ea2c9217c02859a4"
+  },
+  "limitations": [
+    "Catalogue merge waits for Chilpa 0.1.3 with these host features.",
+    "QConnect remote queue control and DLNA gapless are not supplied.",
+    "Provider end-of-stream reporting is incomplete."
+  ]
+}

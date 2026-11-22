@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.vicrodh.qbz",
+  "plugin_version": "0.1.4",
+  "author": "vicrodh",
+  "classification": "third_party",
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-qbz",
+    "commit": "a9090cb5a22d9b4a6a67b412e76dd00500743154",
+    "tag": "v0.1.4"
+  },
+  "package": {
+    "name": "pg-qbz-0.1.4-macos-aarch64.zip",
+    "url": "https://github.com/vicrodh/chilpa-pg-qbz/releases/download/v0.1.4/pg-qbz-0.1.4-macos-aarch64.zip",
+    "platform": "macos-aarch64",
+    "sha256": "f405c11125b1ab14b396ba55e0fdf782ecf7e52806aabdd502a8037d1966205e",
+    "binary_sha256": "e58666876ad29b2971c4b8ed2dcd70a1b0222315771dc53da9a339d80990190a",
+    "compressed_bytes": 22419433,
+    "expanded_bytes": 54269596,
+    "files": 121
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "sdk_revision": "fe89b2f21a636ca6fdf86ff5cd02e0c87fc41fe7",
+    "required_host_revision": "ce0a93fb78772f7b1895d9a2ad448929cc042b02",
+    "required_host_release": "0.1.3",
+    "required_host_features": [
+      "desktop_companion",
+      "settings_path_picker",
+      "settings_refresh"
+    ]
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "www.qobuz.com",
+        "qobuz-qobuz-prod.web.arc-cdn.net",
+        "play.qobuz.com",
+        "streaming-qobuz-std.akamaized.net",
+        "static.qobuz.com",
+        "d12eggcejhfkay.cloudfront.net",
+        "127.0.0.1"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    },
+    {
+      "type": "desktop_companion",
+      "entry": "browser/qbz-browser"
+    }
+  ],
+  "requirements": {
+    "external_programs": [
+      "Firefox",
+      "FFmpeg"
+    ],
+    "account": "Qobuz subscription with lossless streaming",
+    "minimum_platform": "macOS 26"
+  },
+  "validation": {
+    "project": "Chilpa",
+    "date": "2026-11-22",
+    "status": "partial",
+    "scope": [
+      "archive integrity, host size limits and portable package identity",
+      "no compiler home paths in packaged files",
+      "native host installation of the exact release ZIP",
+      "Firefox and decoder detection, disable and helper shutdown"
+    ]
+  },
+  "not_tested": [
+    "Real playback, seeking, gapless and physical audio output on macOS."
+  ],
+  "checks": {
+    "public_zip_host": {
+      "passed": true,
+      "exit": 0,
+      "seconds": 14.43,
+      "package_sha256": "f405c11125b1ab14b396ba55e0fdf782ecf7e52806aabdd502a8037d1966205e",
+      "binary_sha256": "3841860dc5c0c37d5073e34195e07b8e7443ee424c4599a01ac826bfc1fa747f",
+      "checks": [
+        "qml: SETUP PASS native wizard detected Firefox and decoder",
+        "qml: SETUP PASS disabled",
+        "qml: SETUP PASS About release codename"
+      ]
+    },
+    "login_host": {
+      "passed": true,
+      "exit": 0,
+      "seconds": 76.98,
+      "package_sha256": "f405c11125b1ab14b396ba55e0fdf782ecf7e52806aabdd502a8037d1966205e",
+      "binary_sha256": "93b9dafc45dc4c5bef9c47873b5a7450cffdecb85d660b30db1b9448c7082d6b",
+      "checks": [
+        "qml: SETUP PASS native wizard login credentials",
+        "qml: SETUP PASS disabled",
+        "qml: SETUP PASS About release codename"
+      ]
+    },
+    "python_tests": 39,
+    "helper_cold_start_seconds": 9.414,
+    "host_helper_startup_deadline_seconds": 30,
+    "host_enable_ms": 9941
+  },
+  "limitations": [
+    "Catalogue merge waits for Chilpa 0.1.3 with these host features.",
+    "QConnect remote queue control and DLNA gapless are not supplied.",
+    "Provider end-of-stream reporting is incomplete."
+  ]
+}
