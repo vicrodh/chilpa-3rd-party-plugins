@@ -111,3 +111,8 @@ and matching package checksums to install and run.
 The public [SDK and authoring documentation](https://github.com/vicrodh/chilpa-plugins-sdk)
 defines the plugin contract. A detailed independent-repository guide is not
 yet available.
+
+Tidal 0.2.7 and Spotify 0.3.11 target Chilpa 0.1.3 and provide packages for
+Linux x86_64 and macOS Apple Silicon. Their new genre integration needs the
+0.1.3 host contracts. See each version’s catalogue validation report for the
+exact package checks and remaining release requirements.

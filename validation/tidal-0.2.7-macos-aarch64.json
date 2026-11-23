@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "plugin_id": "app.chilpa.tidal",
+  "plugin_version": "0.2.7",
+  "author": "vicrodh",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "partial",
+    "date": "2026-11-21",
+    "scope": [
+      "CI tests and production packaging",
+      "archive CRC and SHA-256",
+      "manifest identity and API version",
+      "exact CI archive installation, permission approval, disable and re-enable",
+      "draft release asset SHA-256 matches the tested CI archive"
+    ],
+    "pending": [
+      "Chilpa 0.1.3 release with the required host contracts",
+      "release publication and public URL verification"
+    ],
+    "hosts": [
+      {
+        "version": "0.1.2 (application metadata)",
+        "backend": "native macOS",
+        "binary_sha256": "ae71420e71cad405b6ed0771df9811f0dbfc12dce6870e90231b66e5634786fe"
+      }
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-tidal",
+    "commit": "bd7b4bd56b033401a150e16fc90e93c709fed08a"
+  },
+  "package": {
+    "name": "0.2.7-aarch64-apple-darwin.zip",
+    "url": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.2.7/0.2.7-aarch64-apple-darwin.zip",
+    "sha256": "5efae39eafe0bbad662112389087fb1bbea8b291468929322930eeb6c065ffe3",
+    "platform": "macos-aarch64",
+    "compressed_bytes": 3280675,
+    "expanded_bytes": 7256430,
+    "publication": "draft_release"
+  },
+  "contract": {
+    "api_version": 1,
+    "runtime": "process",
+    "required_chilpa": "0.1.3"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "api.tidal.com",
+        "auth.tidal.com",
+        "login.tidal.com",
+        "listen.tidal.com",
+        "tidal.com",
+        "resources.tidal.com",
+        "audio.tidal.com",
+        "sp-pr-fa.audio.tidal.com",
+        "sp-ad-fa.audio.tidal.com",
+        "ab-pr-fa.audio.tidal.com",
+        "ec.tidal.com"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ],
+  "ci": {
+    "status": "passed",
+    "run": "https://github.com/vicrodh/chilpa-pg-tidal/actions/runs/44845819791"
+  },
+  "exact_package_host_integration": "passed",
+  "live_account_playback": "not tested",
+  "physical_audio": "not tested",
+  "host_checks": [
+    {
+      "backend": "native",
+      "id": "app.chilpa.tidal",
+      "version": "0.2.7",
+      "sha256": "5efae39eafe0bbad662112389087fb1bbea8b291468929322930eeb6c065ffe3",
+      "passed": true,
+      "isolated_install_verified": true,
+      "export_checked": false,
+      "exit_code": 0
+    }
+  ]
+}
