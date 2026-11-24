@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.shinnycharizard.deezer",
+  "plugin_version": "0.4.10",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-11-21",
+    "hosts": [
+      {
+        "version": "0.1.2 (application metadata)",
+        "backend": "native macOS",
+        "binary_sha256": "ae71420e71cad405b6ed0771df9811f0dbfc12dce6870e90231b66e5634786fe"
+      }
+    ],
+    "scope": [
+      "exact ZIP installation and permission approval",
+      "process startup, disable and re-enable, restart and settings form",
+      "published asset matches the tested ZIP"
+    ],
+    "untested": [
+      "live account authorisation and playback"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/deezer-source",
+    "commit": "6bd479d369f6cb13bc9601b39aa515ef973b2afd"
+  },
+  "package": {
+    "name": "deezer-source-0.4.10-macos-aarch64.zip",
+    "url": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.10/deezer-source-0.4.10-macos-aarch64.zip",
+    "sha256": "ed3ab8defc655104de02fe073d70059c3a4fd91147159067fb174b92febec5c5",
+    "platform": "macos-aarch64",
+    "compressed_bytes": 1992724,
+    "expanded_bytes": 3993523,
+    "files": 5,
+    "binary_sha256": "58c0e2cc6d05f875d1e1741dd74a52103a64ed02c9a0d310363dbdbdb451c3f6",
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process"
+  },
+  "permissions": [
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    },
+    {
+      "type": "network",
+      "domains": [
+        "www.deezer.com",
+        "auth.deezer.com",
+        "pipe.deezer.com",
+        "api.deezer.com",
+        "media.deezer.com",
+        "dzcdn.net"
+      ]
+    }
+  ]
+}
