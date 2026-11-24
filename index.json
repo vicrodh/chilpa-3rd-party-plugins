@@ -3,14 +3,14 @@
   "plugins": [
     {
       "id": "io.github.shinnycharizard.apple-music",
-      "name": "Apple Music",
-      "version": "1.0.2",
-      "description": "Apple Music catalogue, favourites, lyrics and playback through a local native runtime. Subscription required. Linux x86_64; AAC/Widevine-only tracks are unsupported.",
+      "name": "Apple Music (Lossless)",
+      "version": "1.1.3",
+      "description": "Apple Music web catalogue, favourites and lyrics with separate native lossless playback. Subscription required. Linux x86_64.",
       "author": "ShinnyCharizard",
       "category": "Streaming",
       "repository": "https://github.com/ShinnyCharizard/apple-music-source",
-      "package": "https://github.com/ShinnyCharizard/apple-music-source/releases/download/v1.0.2/apple-music-source-1.0.2-linux-x86_64.zip",
-      "sha256": "d53e6c2c7b4938430fae336f5146b6137be49cad720f3e38166fa5f855ac5ab4",
+      "package": "https://github.com/ShinnyCharizard/apple-music-source/releases/download/v1.1.3/apple-music-source-1.1.3-linux-x86_64.zip",
+      "sha256": "9dbaf0464fbc5db48e3cc888a6e228df35525fee085a7c8ecf73a76052d5e932",
       "api": {
         "min": 1,
         "max": 1
@@ -18,14 +18,20 @@
       "classification": "third_party",
       "packages": {
         "linux-x86_64": {
-          "package": "https://github.com/ShinnyCharizard/apple-music-source/releases/download/v1.0.2/apple-music-source-1.0.2-linux-x86_64.zip",
-          "sha256": "d53e6c2c7b4938430fae336f5146b6137be49cad720f3e38166fa5f855ac5ab4"
+          "sha256": "9dbaf0464fbc5db48e3cc888a6e228df35525fee085a7c8ecf73a76052d5e932",
+          "package": "https://github.com/ShinnyCharizard/apple-music-source/releases/download/v1.1.3/apple-music-source-1.1.3-linux-x86_64.zip"
         }
       },
       "validation": {
         "project": "Chilpa",
         "status": "passed",
-        "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/1c89265dafff6a2e198c39480937b68d4fe94153/validation/apple-music-source-1.0.2-linux-x86_64.json"
+        "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/7d834adf1e50689e5014aef9bc21522fc78aeeca/validation/apple-music-source-1.1.3-linux-x86_64.json",
+        "platforms": {
+          "linux-x86_64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/7d834adf1e50689e5014aef9bc21522fc78aeeca/validation/apple-music-source-1.1.3-linux-x86_64.json"
+          }
+        }
       }
     },
     {

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.shinnycharizard.apple-music",
+  "plugin_version": "1.1.3",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-11-21",
+    "hosts": [
+      {
+        "version": "0.1.2",
+        "backend": "Flatpak",
+        "revision": "529055cbc93d8e9d88e0b4f5080f256c378e8fc9262dbdaa05c8e1bb2b32df6d"
+      },
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "native",
+        "revision": "d26d673f7f8c448a96cf1c9823cd95c4a311d4cf"
+      }
+    ],
+    "scope": [
+      "exact ZIP installation and permission approval",
+      "process startup, disable and re-enable, restart and settings form",
+      "published asset matches the tested ZIP"
+    ],
+    "untested": [
+      "live playback"
+    ],
+    "additional_checks": [
+      "143 unit tests passed",
+      "live playlist contents returned 146, 99 and 49 tracks"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/apple-music-source",
+    "commit": "4274238ec141c7df79ec0a646b12fd5643d8b61e"
+  },
+  "package": {
+    "name": "apple-music-source-1.1.3-linux-x86_64.zip",
+    "url": "https://github.com/ShinnyCharizard/apple-music-source/releases/download/v1.1.3/apple-music-source-1.1.3-linux-x86_64.zip",
+    "sha256": "9dbaf0464fbc5db48e3cc888a6e228df35525fee085a7c8ecf73a76052d5e932",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 22376026,
+    "expanded_bytes": 54087486,
+    "files": 155,
+    "binary_sha256": "cc6530ec4589141013c5203414ddb98b562cd633237188c76c3456fb5cf22e32",
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "music.apple.com",
+        "amp-api.music.apple.com",
+        "play.itunes.apple.com",
+        "sf-api-token-service.itunes.apple.com",
+        "itunes.apple.com",
+        "mzstatic.com",
+        "universal-activity-service.itunes.apple.com",
+        "raw.githubusercontent.com",
+        "authorize.music.apple.com"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ]
+}

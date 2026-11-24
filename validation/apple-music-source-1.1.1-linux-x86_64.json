@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.shinnycharizard.apple-music",
+  "plugin_version": "1.1.1",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-11-18",
+    "hosts": [
+      {
+        "version": "0.1.2",
+        "backend": "Flatpak",
+        "revision": "529055cbc93d8e9d88e0b4f5080f256c378e8fc9262dbdaa05c8e1bb2b32df6d"
+      },
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "native",
+        "revision": "377179849074da9d621c894fe205988d0bb9c85a"
+      }
+    ],
+    "scope": [
+      "exact ZIP installation and permission approval",
+      "process startup, disable and re-enable, settings form",
+      "published asset matches the tested ZIP"
+    ],
+    "untested": [
+      "live account authorisation and playback"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/apple-music-source",
+    "commit": "ca21c94ebcd2a9871a2c1d5bba929baf0d051ad4"
+  },
+  "package": {
+    "name": "apple-music-source-1.1.1-linux-x86_64.zip",
+    "url": "https://github.com/ShinnyCharizard/apple-music-source/releases/download/v1.1.1/apple-music-source-1.1.1-linux-x86_64.zip",
+    "sha256": "049235f8471c7e0ce0cd1665315ef8c580bb3984968fac73a16c2bc17d4cf904",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 23025887,
+    "expanded_bytes": 56720886,
+    "files": 158,
+    "binary_sha256": "7f976735e6f060734720d1cd019ef741eb95cae5930c8b850baa092a93dd5ea8",
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "music.apple.com",
+        "amp-api.music.apple.com",
+        "play.itunes.apple.com",
+        "sf-api-token-service.itunes.apple.com",
+        "itunes.apple.com",
+        "mzstatic.com",
+        "universal-activity-service.itunes.apple.com",
+        "raw.githubusercontent.com",
+        "authorize.music.apple.com"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ]
+}
