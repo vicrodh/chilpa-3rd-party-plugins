@@ -71,7 +71,7 @@ https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/main/index.js
 | Tidal | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | Linux x86_64 | Chilpa 0.1.0-beta; a Tidal account with a subscription for full playback. |
 | Spotify | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | Linux x86_64 / macOS Apple Silicon | A host with native process support; Premium for playback; personal Client ID recommended. |
 | Deezer | [ShinnyCharizard](https://github.com/ShinnyCharizard) | [deezer-source](https://github.com/ShinnyCharizard/deezer-source) | Linux x86_64 / macOS Apple Silicon | (Strawberry Doctrine) Your own Deezer session; subscription and track availability determine audio quality. |
-| QBZ (Qobuz client) | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-qbz](https://github.com/vicrodh/chilpa-pg-qbz) | Linux x86_64 / macOS Apple Silicon | (Additional packages required) Chilpa 0.1.3; Firefox; FFmpeg; a Qobuz lossless subscription. Linux glibc 2.42+ or macOS 26+. |
+| QBZ (Qobuz client) | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-qbz](https://github.com/vicrodh/chilpa-pg-qbz) | Linux x86_64 / macOS Apple Silicon | (Additional packages required) Chilpa 0.1.3; Firefox; FFmpeg; a Qobuz lossless subscription. Linux glibc 2.38+ or macOS 26+. |
 | Qobuz | [ShinnyCharizard](https://github.com/ShinnyCharizard) | [pg-qbz](https://github.com/ShinnyCharizard/pg-qbz) | Linux x86_64 | (Strawberry Doctrine) Qobuz subscription; glibc 2.38 or later. |
 | Qobuz Purchase Downloader | [ShinnyCharizard](https://github.com/ShinnyCharizard) | [qobuz-downloader](https://github.com/ShinnyCharizard/qobuz-downloader) | Linux x86_64 | (Strawberry Doctrine) Purchased Qobuz music; separate browser authorisation; no streaming subscription required. |
 
@@ -91,8 +91,9 @@ QBZ uses a background Firefox instance for authentication and stream decryption;
 Chilpa plays the audio through its own engine. Its README credits
 [Matthew (@matthewprince)](https://github.com/matthewprince) and
 [ZBQ](https://github.com/matthewprince/zbq) for the browser bridge approach.
-Linux playback and gapless were validated; macOS setup and login were validated,
-but macOS playback remains untested.
+Linux playback and gapless were validated, and 0.1.5 was checked with Firefox
+installed as a Snap; macOS setup and login were validated with 0.1.4, but macOS
+playback remains untested.
 
 ## Catalog format
 
