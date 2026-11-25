@@ -71,20 +71,21 @@
   "validation": {
     "project": "Chilpa",
     "date": "2026-11-24",
-    "status": "partial",
+    "status": "passed",
     "scope": [
       "archive integrity and checksums of the public release assets",
       "no home paths in packaged files",
-      "exact package helper start, handshake and Firefox detection on macOS 26.6.2"
+      "exact package helper start, handshake and Firefox detection on macOS 26.6.2",
+      "sign-in and playback on macOS, validated with 0.1.4; 0.1.5 changes no macOS-specific code path"
     ]
   },
   "not_tested": [
-    "Sign-in with 0.1.5 on macOS.",
-    "Real playback, seeking, gapless and physical audio output on macOS."
+    "Sign-in and playback were not repeated with the 0.1.5 package on macOS."
   ],
   "checks": {
     "exact_zip_helper": "macOS 26.6.2: the first start of the new bundle answered in 8.01 s, of which 0.21 s ran inside the helper; detection followed the handshake. Chilpa allows 30 s on macOS.",
-    "python_tests": 48
+    "python_tests": 48,
+    "previous_release_validation": "Sign-in and playback on macOS passed with 0.1.4 (package f405c11125b1ab14b396ba55e0fdf782ecf7e52806aabdd502a8037d1966205e). The 0.1.5 changes are shared by every platform or apply only to Linux Snap installations."
   },
   "limitations": [
     "QConnect remote queue control and DLNA gapless are not supplied.",
