@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "plugin_id": "io.github.dovepants.qobuz-downloader",
+  "plugin_version": "1.0.3",
+  "author": "ShinnyCharizard",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-11-21",
+    "hosts": [
+      {
+        "version": "0.1.2",
+        "backend": "Flatpak",
+        "revision": "529055cbc93d8e9d88e0b4f5080f256c378e8fc9262dbdaa05c8e1bb2b32df6d"
+      },
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "native",
+        "revision": "d26d673f7f8c448a96cf1c9823cd95c4a311d4cf"
+      }
+    ],
+    "scope": [
+      "exact ZIP installation and permission approval",
+      "process startup, disable and re-enable, restart and settings form",
+      "published asset matches the tested ZIP"
+    ],
+    "untested": [
+      "live purchase downloads"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/ShinnyCharizard/qobuz-downloader",
+    "commit": "dd23e503ed5d49e5e563fcb792ff60e6035b9ff8"
+  },
+  "package": {
+    "name": "qobuz-downloader-1.0.3-linux-x86_64.zip",
+    "url": "https://github.com/ShinnyCharizard/qobuz-downloader/releases/download/v1.0.3/qobuz-downloader-1.0.3-linux-x86_64.zip",
+    "sha256": "94526a120017e7b43ec737b5c741957e43f36cac4978610b78ddf3902958cf23",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 3603525,
+    "expanded_bytes": 9177614,
+    "files": 8,
+    "binary_sha256": "207b80046761b66989866381a0c10564b6633151059252328424523aa277bbf5",
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "www.qobuz.com",
+        "play.qobuz.com",
+        "download-v2.qobuz.com",
+        "streaming-qobuz-std.akamaized.net",
+        "static.qobuz.com",
+        "d12eggcejhfkay.cloudfront.net"
+      ]
+    },
+    {
+      "type": "folder_write"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ]
+}

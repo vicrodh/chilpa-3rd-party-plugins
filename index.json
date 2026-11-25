@@ -117,6 +117,39 @@
       }
     },
     {
+      "id": "io.github.dovepants.qobuz-downloader",
+      "name": "Qobuz Purchase Downloader",
+      "version": "1.0.3",
+      "description": "Download purchased Qobuz albums and tracks in entitled formats. Separate browser authorisation; no streaming subscription required. Linux x86_64.",
+      "author": "ShinnyCharizard",
+      "category": "Tools",
+      "repository": "https://github.com/ShinnyCharizard/qobuz-downloader",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "packages": {
+        "linux-x86_64": {
+          "sha256": "94526a120017e7b43ec737b5c741957e43f36cac4978610b78ddf3902958cf23",
+          "package": "https://github.com/ShinnyCharizard/qobuz-downloader/releases/download/v1.0.3/qobuz-downloader-1.0.3-linux-x86_64.zip"
+        }
+      },
+      "package": "https://github.com/ShinnyCharizard/qobuz-downloader/releases/download/v1.0.3/qobuz-downloader-1.0.3-linux-x86_64.zip",
+      "sha256": "94526a120017e7b43ec737b5c741957e43f36cac4978610b78ddf3902958cf23",
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/1f12d56b302f5fd9189656c0f8c7f37164c7a107/validation/qobuz-downloader-1.0.3-linux-x86_64.json",
+        "platforms": {
+          "linux-x86_64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/1f12d56b302f5fd9189656c0f8c7f37164c7a107/validation/qobuz-downloader-1.0.3-linux-x86_64.json"
+          }
+        }
+      }
+    },
+    {
       "id": "io.github.shinnycharizard.deezer",
       "name": "Deezer",
       "version": "0.4.10",
