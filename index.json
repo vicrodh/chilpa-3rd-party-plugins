@@ -120,7 +120,7 @@
       "id": "io.github.dovepants.qobuz-downloader",
       "name": "Qobuz Purchase Downloader",
       "version": "1.0.3",
-      "description": "Download purchased Qobuz albums and tracks in entitled formats. Separate browser authorisation; no streaming subscription required. Linux x86_64.",
+      "description": "(Strawberry Doctrine) Download purchased Qobuz albums and tracks in entitled formats. Separate browser authorisation; no streaming subscription required. Linux x86_64.",
       "author": "ShinnyCharizard",
       "category": "Tools",
       "repository": "https://github.com/ShinnyCharizard/qobuz-downloader",
@@ -227,6 +227,39 @@
           "macos-aarch64": {
             "status": "partial",
             "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/9d9c9990dc04288fe99eed5f2b36b749342e652c/validation/qbz-0.1.4-macos-aarch64.json"
+          }
+        }
+      }
+    },
+    {
+      "id": "io.github.dovepants.qobuz",
+      "name": "Qobuz",
+      "version": "1.2.5",
+      "description": "(Strawberry Doctrine) Qobuz catalogue, saved library, playlists, lyrics and playback. Subscription required.",
+      "author": "ShinnyCharizard",
+      "category": "Streaming",
+      "repository": "https://github.com/ShinnyCharizard/pg-qbz",
+      "package": "https://github.com/ShinnyCharizard/pg-qbz/releases/download/v1.2.5/pg-qbz-1.2.5-linux-x86_64.zip",
+      "sha256": "4bb82dbf3462c28362031e65da2abfcfff36a39751c2620928f3ef26aba65c91",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "packages": {
+        "linux-x86_64": {
+          "sha256": "4bb82dbf3462c28362031e65da2abfcfff36a39751c2620928f3ef26aba65c91",
+          "package": "https://github.com/ShinnyCharizard/pg-qbz/releases/download/v1.2.5/pg-qbz-1.2.5-linux-x86_64.zip"
+        }
+      },
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/9b2c6fef7b045083be7f4b6c695f50b25d64b61b/validation/pg-qbz-1.2.5-linux-x86_64.json",
+        "platforms": {
+          "linux-x86_64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/9b2c6fef7b045083be7f4b6c695f50b25d64b61b/validation/pg-qbz-1.2.5-linux-x86_64.json"
           }
         }
       }
