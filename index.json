@@ -225,8 +225,8 @@
             "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/39d4791f68e696e572b4780678f7739dfd058c99/validation/qbz-0.1.5-linux-x86_64.json"
           },
           "macos-aarch64": {
-            "status": "partial",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/39d4791f68e696e572b4780678f7739dfd058c99/validation/qbz-0.1.5-macos-aarch64.json"
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/f6f00ddb8f6340483347b52fe1d623b921d23c2c/validation/qbz-0.1.5-macos-aarch64.json"
           }
         }
       }

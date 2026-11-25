@@ -92,8 +92,7 @@ Chilpa plays the audio through its own engine. Its README credits
 [Matthew (@matthewprince)](https://github.com/matthewprince) and
 [ZBQ](https://github.com/matthewprince/zbq) for the browser bridge approach.
 Linux playback and gapless were validated, and 0.1.5 was checked with Firefox
-installed as a Snap; macOS setup and login were validated with 0.1.4, but macOS
-playback remains untested.
+installed as a Snap. macOS sign-in and playback were validated with 0.1.4.
 
 ## Catalog format
 
